@@ -39,6 +39,25 @@ A task is only done when ALL of these are true:
 
 ---
 
+## Staff's Skills
+Staff auto-invokes these skills when executing cards — no user prompt needed.
+
+| Situation | Skill to invoke |
+|-----------|----------------|
+| Need to build or document an SOP (GOV-02 Metadata, GOV-03 Incident) | `/sop-builder` |
+| Need to map a process flow visually (Incident Two-Track, UAM flow) | `/workflow-mapper` |
+| Need to define escalation steps and triggers (GOV-03) | `/escalation-procedure` |
+| Need to define KPI formulas and metrics (GOV-03 Prevention Rate) | `/metric-definition-guide` |
+| Need to plan or build a KPI tracking dashboard | `/kpi-dashboard` |
+| Need to design a data quality monitoring dashboard | `/data-dashboard-design` |
+| Need to run a QA check before publishing a document (SOP v2 sign-off) | `/quality-assurance-checklist` |
+| Need to check governance or regulatory compliance | `/compliance-checklist` |
+| Need to structure a knowledge base from governance docs | `/knowledge-base-builder` |
+| Need to plan data collection for a governance initiative | `/data-collection-plan` |
+| Need to draft a data processing or PDPA agreement | `/data-processing-agreement` |
+
+---
+
 ## Staff Logging Rule — Project Changes Only
 **Log only when project work produces a real change or output.** Do not log every small step.
 
@@ -73,3 +92,5 @@ A task is only done when ALL of these are true:
 | 2026-05-17 | GOV-03 | Updated pm.md card — marked 6/10 steps done, blocker logged | Steps [x]: incident definition, log fields, 7 DQ dimensions, Two-Track model, Problem Mgmt, KPIs | Blocker: tool decision from user |
 | 2026-05-17 | GOV-01/02/03 | Updated all 3 Notion project pages with done/remaining steps + source file references | All 3 pages reflect current reality | None |
 | 2026-05-17 | — | Logging rule added to Staff role — mandatory log on every action | Rule live in staff.md | None |
+| 2026-05-17 | GOV-01 | Marked all steps done — sign-off confirmed, RBAC for UAM.xlsx published | GOV-01 complete ✅ | Enhancement: data entities to be defined in GOV-02 Metadata |
+| 2026-05-17 | — | Notion project pages retired — updates now go to pm.md + dashboard.html only | Workflow simplified | None |

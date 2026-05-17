@@ -31,8 +31,8 @@ Only runs for **New Project** or **Existing Project** requests.
 
 ### Existing Project
 1. **Identify** — Match the request to the right card on the board (GOV-01 / GOV-02 / GOV-03 / etc.)
-2. **Act** — Make the right update: step status, blocker, note, or escalation
-3. **Log** — Write one entry to the Notion Team Work Log recording what changed and why
+2. **Act** — Update `pm.md` (source of truth) and regenerate `dashboard.html`. Do NOT update Notion project pages — they are retired.
+3. **Log** — Write one entry to the Notion Team Work Log (Work Log only, not project pages)
 
 ---
 
@@ -74,6 +74,20 @@ PM and Staff are **only involved in work project requests**. General assistance 
 - **Do not log** general assistance, advice, questions, or conversation.
 - **Log format:** Date · Action · Card Affected · What Changed
 - **Where:** Notion [Team Work Log](https://www.notion.so/362056142e1381b9a346e9345e690b79) — Susan section
+
+---
+
+## Susan's Skills
+Susan auto-invokes these skills when the situation matches — no need for the user to type `/`.
+
+| Situation | Skill to invoke |
+|-----------|----------------|
+| User wants a weekly boss meeting update | `/weekly-report` |
+| User needs a stakeholder status update on a project | `/status-update-template` |
+| User wants to analyze feedback after a governance rollout | `/feedback-analysis` |
+| User asks where AI can help in their workflow | `/ai-use-case-finder` |
+| User needs an AI usage/ethics policy | `/ai-ethics-policy` |
+| New project needs scope defined before routing to PM | `/scope-of-work` |
 
 ---
 

@@ -34,6 +34,19 @@ Every card must be: **Specific · Measurable · Achievable · Relevant · Time-b
 
 ---
 
+## PM's Skills
+PM auto-invokes these skills when creating or managing cards — no user prompt needed.
+
+| Situation | Skill to invoke |
+|-----------|----------------|
+| New project needs scope defined before card creation | `/scope-of-work` |
+| Project needs OKRs or measurable goals set | `/okr-builder` |
+| Card has a potential risk that needs structured assessment | `/risk-assessment` |
+| Team performance needs to be reviewed | `/performance-review` |
+| Stakeholder needs a structured status update on a card | `/status-update-template` |
+
+---
+
 ## PM Logging Rule — Project Changes Only
 **Log only when a project card changes.** Do not log routine conversation or general support.
 
@@ -65,7 +78,7 @@ Every card must be: **Specific · Measurable · Achievable · Relevant · Time-b
 - **Priority:** P1
 - **Owner:** User (solo)
 - **Due:** 2026-06-30
-- **Status:** [~] In Progress — ~67% complete
+- **Status:** [x] Done ✅ — completed 2026-05-17
 - **Files:** `04_DataGovernance_30pct/UAM_RBAC/RBAC for UAM.xlsx`
 - **Done When:** Role matrix signed off by stakeholder and published to the team.
 - **Steps:**
@@ -73,9 +86,9 @@ Every card must be: **Specific · Measurable · Achievable · Relevant · Time-b
   - [x] Map current users to roles (SPWG, ONESIAM, ICON, SPO mapped in Phase 1)
   - [x] Define role tiers and permission levels (Security Level + Position IDs assigned)
   - [x] Draft the Role Access Matrix document (RBAC Phase 1 as-is, Mar 2026)
-  - [ ] Get sign-off from stakeholder / boss
-  - [ ] Publish and share the final document
-- **Notes:** Phase 1 covers existing access as-is. May need Phase 2 for future-state roles.
+  - [x] Get sign-off from stakeholder / boss
+  - [x] Publish and share the final document — RBAC for UAM.xlsx is the final published output
+- **Notes:** ✅ Complete. Final output is the RBAC matrix mapping roles to data entities across SPWG, ONESIAM, ICON, SPO. Enhancement opportunity: data entities in the RBAC are not yet fully defined — GOV-02 Metadata should pick these up and define them properly as part of the data dictionary.
 
 ---
 
@@ -93,10 +106,10 @@ Every card must be: **Specific · Measurable · Achievable · Relevant · Time-b
   - [x] Write field definitions and business rules (full SOP with 8 procedures, RACI, PRC)
   - [x] Assign metadata ownership per domain (RACI Matrix in Appendix A)
   - [x] Draft SOP through multiple revisions (v1 → v2, 18 tracked changes with reasons)
-  - [ ] Final team agreement and sign-off on SOP v2
-  - [ ] Publish metadata catalog / data dictionary
+  - [ ] Final team agreement and sign-off on SOP v2 → use `/quality-assurance-checklist` to validate before sign-off
+  - [ ] Publish metadata catalog / data dictionary → use `/knowledge-base-builder` to structure the catalog
   - [ ] Link to Chat to Data project as authoritative AI data source
-  - [ ] Set monthly review cadence
+  - [ ] Set monthly review cadence → use `/okr-builder` to set measurable review goals
 - **Notes:** SOP is mature (v2, 18 documented changes). Main gap is formal sign-off and publication. Stays active after Jun 30.
 
 ---
@@ -115,10 +128,10 @@ Every card must be: **Specific · Measurable · Achievable · Relevant · Time-b
   - [x] Document Two-Track Model (Reactive + Proactive) — 8-slide deck complete
   - [x] Define Problem Management process (Col H flag → RCA → Countermeasure)
   - [x] Define KPIs (Prevention Rate >70%, Problem Rate, Avg Days to Resolve)
-  - [ ] Confirm final tool for live tracker (Excel / Notion / Service Desk Plus)
-  - [ ] Build / configure live tracker in agreed tool
-  - [ ] Write team onboarding guide and run walkthrough session
-  - [ ] Log first real incident end-to-end to validate the full flow
+  - [ ] Confirm final tool for live tracker (Excel / Notion / Service Desk Plus) → use `/workflow-mapper` to compare tool options visually
+  - [ ] Build / configure live tracker in agreed tool → use `/kpi-dashboard` for KPI tracking sheet + `/data-dashboard-design` for monitoring view
+  - [ ] Write team onboarding guide and run walkthrough session → use `/sop-builder` for the onboarding SOP
+  - [ ] Log first real incident end-to-end to validate the full flow → use `/escalation-procedure` to validate the escalation path
 - **Notes / Blockers:** [!] Tool decision needed from user before next 3 steps can proceed.
 
 ---
@@ -129,7 +142,9 @@ Every card must be: **Specific · Measurable · Achievable · Relevant · Time-b
 ---
 
 ## Completed
-> No completed cards yet.
+| Card | Project | Completed | Output |
+|------|---------|-----------|--------|
+| GOV-01 | UAM — User Access Management | 2026-05-17 | `UAM_RBAC/RBAC for UAM.xlsx` |
 
 ---
 
@@ -152,3 +167,6 @@ Every card must be: **Specific · Measurable · Achievable · Relevant · Time-b
 | 2026-05-17 | GOV-02 | Steps updated after Staff audit — 5/9 done | ~56% complete |
 | 2026-05-17 | GOV-03 | Steps updated after Staff audit — 6/10 done, blocker flagged | ~60% complete, tool decision needed |
 | 2026-05-17 | — | Logging rule added to PM role — mandatory log on every card action | Rule live |
+| 2026-05-17 | GOV-01 | Status changed to Done — sign-off received, RBAC published | Completed ✅ |
+| 2026-05-17 | GOV-02 | Enhancement noted — GOV-01 data entities to be defined in Metadata dictionary | Note added |
+| 2026-05-17 | — | Notion project pages retired — pm.md + dashboard.html are now single source | Workflow simplified |
