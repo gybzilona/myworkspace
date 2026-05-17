@@ -1,0 +1,16 @@
+# Temp Office files
+~$*
+~WRL*.tmp
+
+# Claude internal
+.claude/
+
+# Raw extract folders (intermediate working files)
+_Reference/ppt_r2_extract/
+_Reference/ppt_r3_verify/
+_Reference/sop_extract/
+_Reference/sop_extract2/
+
+# System
+Thumbs.db
+.DS_Store
