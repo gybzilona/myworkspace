@@ -96,9 +96,9 @@ PM auto-invokes these skills when creating or managing cards — no user prompt 
 - **Priority:** P1
 - **Owner:** User (solo)
 - **Due:** 2026-06-30 (Phase 1) — then ongoing
-- **Status:** [~] In Progress — ~56% complete
-- **Files:** `04_DataGovernance_30pct/Metadata/SOP_Meta Data Practical v.2.docx` (SPW-BDSI-SP-002), `Datahub_metadata_template.xlsx`
-- **Done When (Phase 1):** SOP v2 finalized, agreed, and published. Template adopted.
+- **Status:** [!] Blocked — awaiting IT Manager agreement on metadata scope
+- **Files:** `04_DataGovernance_30pct/Metadata/SOP_Meta Data Practical v.2.docx` (SPW-BDSI-SP-002), `04_DataGovernance_30pct/Metadata/Datahub_metadata_template.xlsx`
+- **Done When (Phase 1):** Scope agreed with IT Manager → `Datahub_metadata_template.xlsx` fully populated and published as authoritative AI data source for Chat to Data.
 - **Done When (Ongoing):** Kept live as authoritative source for Chat to Data AI.
 - **Steps:**
   - [x] Inventory all current data fields / tables in scope
@@ -106,11 +106,12 @@ PM auto-invokes these skills when creating or managing cards — no user prompt 
   - [x] Write field definitions and business rules (full SOP with 8 procedures, RACI, PRC)
   - [x] Assign metadata ownership per domain (RACI Matrix in Appendix A)
   - [x] Draft SOP through multiple revisions (v1 → v2, 18 tracked changes with reasons)
-  - [ ] Final team agreement and sign-off on SOP v2 → use `/quality-assurance-checklist` to validate before sign-off
-  - [ ] Publish metadata catalog / data dictionary → use `/knowledge-base-builder` to structure the catalog
-  - [ ] Link to Chat to Data project as authoritative AI data source
+  - [!] Get IT Manager agreement on metadata scope — present SOP v.2 as the scope definition (linked to Chat to Data project)
+  - [ ] Final team sign-off on agreed scope → use `/quality-assurance-checklist` to validate before sign-off
+  - [ ] Populate `Datahub_metadata_template.xlsx` with agreed scope (incl. data entities from GOV-01 RBAC) → use `/knowledge-base-builder` to structure the catalog
+  - [ ] Link populated template to Chat to Data project as authoritative AI data source
   - [ ] Set monthly review cadence → use `/okr-builder` to set measurable review goals
-- **Notes:** SOP is mature (v2, 18 documented changes). Main gap is formal sign-off and publication. Stays active after Jun 30.
+- **Notes / Blockers:** [!] Blocked on IT Manager scope agreement. Presenting SOP_Meta Data Practical v.2.docx as the scope. Chat to Data project depends on this template being populated. Data entities from GOV-01 RBAC should be included in the template.
 
 ---
 
@@ -118,9 +119,9 @@ PM auto-invokes these skills when creating or managing cards — no user prompt 
 - **Priority:** P1
 - **Owner:** User (solo)
 - **Due:** 2026-06-30
-- **Status:** [~] In Progress — ~60% complete
-- **Files:** `04_DataGovernance_30pct/Incident_Tracking/Incident_Management_Flow.pptx`, `Data_Quality/Data_Quality_Monitoring_Report.xlsx`
-- **Done When:** Tracker live in agreed system, team onboarded, first real incident logged end-to-end.
+- **Status:** [~] In Progress — ~67% complete
+- **Files:** `04_DataGovernance_30pct/Incident_Tracking/Incident_Management_Flow.pptx`, `04_DataGovernance_30pct/Data_Quality/DQ_Management_Report.pptx`
+- **Done When:** Team trained on framework, users trained on SDP, data quality tracking live, first real incident logged end-to-end.
 - **Steps:**
   - [x] Define what counts as an incident (Reactive P1 = user-reported; Proactive P2/P3 = monitoring-detected)
   - [x] Design incident log fields (Category, DataMart stream, Dimension, Severity P1-P4, Assignee, Resolution, Problem Link)
@@ -128,11 +129,13 @@ PM auto-invokes these skills when creating or managing cards — no user prompt 
   - [x] Document Two-Track Model (Reactive + Proactive) — 8-slide deck complete
   - [x] Define Problem Management process (Col H flag → RCA → Countermeasure)
   - [x] Define KPIs (Prevention Rate >70%, Problem Rate, Avg Days to Resolve)
-  - [ ] Confirm final tool for live tracker (Excel / Notion / Service Desk Plus) → use `/workflow-mapper` to compare tool options visually
-  - [ ] Build / configure live tracker in agreed tool → use `/kpi-dashboard` for KPI tracking sheet + `/data-dashboard-design` for monitoring view
-  - [ ] Write team onboarding guide and run walkthrough session → use `/sop-builder` for the onboarding SOP
-  - [ ] Log first real incident end-to-end to validate the full flow → use `/escalation-procedure` to validate the escalation path
-- **Notes / Blockers:** [!] Tool decision needed from user before next 3 steps can proceed.
+  - [x] Confirm final tool — SDP (Service Desk Plus) selected
+  - [x] SDP configured and ready for use
+  - [ ] Helpdesk team delivers training to user's team based on incident tracking framework (`Incident_Management_Flow.pptx`) → use `/sop-builder` for training guide
+  - [ ] Team trained on SDP — live usage of the tracker → use `/escalation-procedure` to validate escalation path during training
+  - [ ] Data quality tracking go live — `DQ_Management_Report.pptx` as source framework → use `/data-dashboard-design` for monitoring view
+  - [ ] Log first real incident end-to-end to validate the full flow
+- **Notes:** Tool decision resolved — SDP chosen and configured. Blocker cleared. Next owner action: coordinate with Helpdesk team to schedule training.
 
 ---
 
@@ -170,3 +173,7 @@ PM auto-invokes these skills when creating or managing cards — no user prompt 
 | 2026-05-17 | GOV-01 | Status changed to Done — sign-off received, RBAC published | Completed ✅ |
 | 2026-05-17 | GOV-02 | Enhancement noted — GOV-01 data entities to be defined in Metadata dictionary | Note added |
 | 2026-05-17 | — | Notion project pages retired — pm.md + dashboard.html are now single source | Workflow simplified |
+| 2026-05-17 | GOV-02 | Status changed to Blocked — IT Manager scope agreement needed before template can be populated | Blocker logged |
+| 2026-05-17 | GOV-02 | Done When updated — populated Datahub_metadata_template.xlsx as Chat to Data AI source | Clearer target |
+| 2026-05-17 | GOV-03 | Blocker cleared — SDP chosen and configured. Steps 7+8 marked done | ~67% complete |
+| 2026-05-17 | GOV-03 | Remaining steps updated — team training, SDP training, DQ go live, first incident log | 4 steps remain |
